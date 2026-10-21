@@ -82,9 +82,9 @@ Revisa **todos los anuncios activos**, no uno. El problema suele estar en el con
   en 0 y botón de atrás. Todo en una pantalla parece un examen; solo 2 pasos (datos primero y todo lo demás después)
   convierte peor que una sola página.
 - **El orden NEPQ:**
-  1. el objetivo;
-  2. la situación;
-  3. lo que le frena;
+  1. la situación y el problema (que reconozca su dolor);
+  2. a dónde quiere llegar;
+  3. cómo lo resuelve la solución;
   4. el encaje (la descalificación);
   5. **los datos, al final.**
 - **Siempre una pregunta de descalificación** en el paso 4 (presupuesto, facturación, momento o decisor), **por
@@ -95,9 +95,9 @@ Revisa **todos los anuncios activos**, no uno. El problema suele estar en el con
 - **Nada de salida alternativa** (WhatsApp, «llámanos») que permita saltarse el filtro.
 
 **Plantilla para proponer** (adáptala al negocio; nunca la dejes genérica):
-1. ¿Qué te gustaría conseguir con [servicio]? (3-5 opciones + «otro»)
-2. ¿En qué punto estás ahora? (situaciones reales)
-3. ¿Qué es lo que más te frena hoy? (+ una línea de «esto tiene solución» antes del paso 4)
+1. ¿Cuál de estas situaciones se parece más a la tuya? (3-5 situaciones reales con su dolor, con las palabras del cliente + «otra»)
+2. ¿Qué te gustaría conseguir? (resultados concretos)
+3. Una línea con cómo se resuelve + ¿Qué te ayudaría más ahora?
 4. [Encaje por rangos, con las opciones que descalifican marcadas]
 5. ¿Cómo te contactamos para preparar tu llamada? (nombre, correo, teléfono)
 
@@ -105,12 +105,12 @@ Revisa **todos los anuncios activos**, no uno. El problema suele estar en el con
 
 **Qué tiene que pasar.** El objetivo es que **el lead espere la llamada y la conteste**:
 - confirmar que se recibió, **con su nombre** si viene del formulario;
-- **quién va a llamar:** foto, nombre y cargo;
+- **quién va a llamar:** foto, nombre y cargo (el comercial o agente de ventas);
 - **cuándo:** «en los próximos minutos», «hoy antes de las 19:00»… lo que el negocio pueda cumplir de verdad;
 - **desde qué número o prefijo**, para que no lo tome por spam;
 - **de qué se va a hablar** en esa llamada y cuánto dura;
 - **qué puede preparar** (2-3 cosas);
-- los próximos pasos, numerados;
+- **los próximos pasos**, numerados;
 - **sin WhatsApp ni otras salidas.** La única acción es esperar la llamada.
 
 **Fallos típicos:**

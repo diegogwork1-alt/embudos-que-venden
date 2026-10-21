@@ -26,13 +26,14 @@ Si hay un `brief.md` en la carpeta (de la skill `brief-de-oferta`), léelo prime
 
 1. **Confirmación con su nombre:** «Listo, {nombre}. Hemos recibido tu solicitud.»
 2. **El siguiente paso, grande y claro:** «Te vamos a llamar [cuándo]. Ten el móvil a mano.»
-3. **Quién te llama:** la tarjeta con su foto, nombre y cargo, y una línea humana («Soy Laura, y voy a ser quien te llame para…»).
+3. **Quién te llama:** la tarjeta con su foto, nombre y cargo (el comercial o agente de ventas), y una línea humana («Soy Laura, y voy a ser quien te llame para…»).
 4. **Desde qué número:** «Te llamaremos desde el +34 9XX… (o un número que empieza por…). Guárdalo para reconocerlo.»
 5. **De qué vamos a hablar:** 3 puntos, la duración y qué saldrá de la llamada.
-6. **Qué puedes preparar:** 2-3 cosas.
-7. **Lo que nos contaste:** un resumen de sus respuestas desde la URL («Quieres conseguir: {objetivo}»). Le confirma que le han escuchado.
-8. **Prueba breve** (opcional): una o dos líneas de credibilidad, solo con datos reales.
-9. **Pie** con los datos legales.
+6. **Los próximos pasos**, numerados: «1. Te llamamos. 2. En la llamada vemos tu caso. 3. Si encaja, te mandamos la propuesta».
+7. **Qué puedes preparar:** 2-3 cosas.
+8. **Lo que nos contaste:** un resumen de sus respuestas desde la URL («Quieres conseguir: {objetivo}»). Le confirma que le han escuchado.
+9. **Prueba breve** (opcional): una o dos líneas de credibilidad, solo con datos reales.
+10. **Pie** con los datos legales.
 
 **Sin WhatsApp, sin enlaces a la home, sin redes sociales, sin otra oferta.** La única acción es esperar la llamada.
 

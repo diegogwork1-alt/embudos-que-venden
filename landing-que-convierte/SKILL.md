@@ -34,6 +34,7 @@ description: Construye la landing de captación de un negocio de servicios que r
 Escribe el texto entero y enséñalo antes de maquetar, en `landing-texto.md`. Con estas reglas:
 - **Nivel de consciencia** (Schwartz): si el que llega no conoce el problema, abre con el problema; si lo conoce, con la solución; si ya te conoce, con la oferta. Un tráfico frío de anuncios suele estar en «conoce el problema».
 - **Titular** (Ogilvy): promesa concreta en el idioma del cliente, que segmenta («Para [quién] que [situación]»). Nada de «Somos líderes en…».
+- **Voz del cliente:** escribe con las palabras y el estilo con que habla el cliente (reseñas, mensajes, llamadas, el `brief.md`), no con las del negocio.
 - **Una idea por bloque**, frases cortas, sin tecnicismos.
 - **Prueba cerca de la promesa**, siempre real: casos, cifras con fuente, testimonios con nombre.
 - **Una sola acción**, repetida 2-3 veces con el mismo texto de botón.

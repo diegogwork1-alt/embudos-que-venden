@@ -7,7 +7,7 @@ Cinco skills para Claude Code con el método que uso en **Flowboost Marketing** 
 | [`revisor-de-embudo`](revisor-de-embudo/) | Revisa tu embudo entero con los 6 puntos: **anuncios → landing → VSL → formulario → página de gracias → llamada en 5 minutos**. Te dice qué está bien y qué cambiar, por orden de impacto | La revisión, en la conversación |
 | [`brief-de-oferta`](brief-de-oferta/) | Claude te entrevista, pregunta por pregunta, para sacar el brief de tu oferta antes de construir nada. Guarda un borrador por bloques, así que puedes parar y seguir | `brief.md` |
 | [`landing-que-convierte`](landing-que-convierte/) | Del brief al texto y del texto a una landing en un solo HTML, rápida, móvil primero y con una sola acción | `landing-texto.md` · `index.html` · `pendientes.md` |
-| [`formulario-nepq`](formulario-nepq/) | El formulario de varios pasos que cualifica: primero el objetivo y el dolor, y los datos al final. Te lo da en texto, para cualquier herramienta | `formulario-nepq.md` |
+| [`formulario-nepq`](formulario-nepq/) | El formulario de varios pasos que cualifica: primero la situación y el problema, después a dónde quiere llegar y cómo se resuelve, y los datos al final. Te lo da en texto, para cualquier herramienta | `formulario-nepq.md` |
 | [`pagina-de-gracias`](pagina-de-gracias/) | La página de gracias que hace que el lead espere tu llamada: quién llama, cuándo, desde qué número y de qué se habla | `gracias.html` |
 
 **El orden recomendado:** `brief-de-oferta` → `landing-que-convierte` → `formulario-nepq` → `pagina-de-gracias`. Y cuando ya tengas anuncios funcionando, `revisor-de-embudo`.

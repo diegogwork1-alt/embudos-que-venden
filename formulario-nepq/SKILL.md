@@ -11,11 +11,13 @@ description: Diseña el formulario de cualificación de un negocio que capta cli
 # Formulario NEPQ · 5 pasos que filtran antes de pedir los datos
 
 **La idea.** Pedir nombre, correo y teléfono de entrada pone al lead a la defensiva: lo siente como un trámite para que le vendan. El método NEPQ (las preguntas de persuasión de Jeremy Miner) hace lo contrario: con preguntas, la persona descubre por sí misma su situación, su problema y lo que le cuesta. Llevado a un formulario, eso significa:
-1. qué quiere conseguir;
-2. en qué punto está;
-3. qué le frena;
-4. si encaja;
+1. **situación y problema:** que reconozca su situación y su dolor;
+2. **a dónde quiere llegar:** el resultado que busca;
+3. **cómo se resuelve:** que vea que tu solución le lleva ahí;
+4. **si encaja:** el filtro de presupuesto o de urgencia;
 5. y solo al final, sus datos.
+
+En corto: situación y problema → beneficio → solución → filtro → datos.
 
 Cuando llega a los datos ya ha invertido un poco, entiende su problema y ve que se lo pueden resolver. Baja la guardia, completa el formulario y llega cualificado a la llamada. A quien no encaja no se le llama: se le despide bien.
 
@@ -25,9 +27,9 @@ Si hay un `brief.md` en la carpeta (de la skill `brief-de-oferta`), léelo prime
 
 
 1. **Qué vende el negocio y a quién**, en una frase.
-2. **Qué resultados buscan sus clientes**, para las opciones del paso 1.
-3. **En qué situaciones suele estar el cliente antes de contratar**, para el paso 2.
-4. **Qué les frena o qué han probado ya**, para el paso 3.
+2. **En qué situación está el cliente antes de contratar y qué le duele**, con sus palabras, para las opciones del paso 1.
+3. **Qué resultado busca**, para el paso 2.
+4. **Cómo lo resuelve el negocio** (el servicio, los pasos, lo que lo hace distinto), para el paso 3.
 5. **Qué hace que alguien NO encaje**: presupuesto, momento, decisor, zona, tipo de negocio… Es la descalificación, y es obligatoria.
 6. **Qué se le puede ofrecer a quien no encaja** (un contenido, una guía, otro servicio, «vuelve cuando…»).
 7. **Qué pasa después del formulario**: llamada, cita o visita.
@@ -38,9 +40,9 @@ Si la persona no lo sabe todo, propón opciones razonables para su sector, márc
 
 | Paso | Fase NEPQ | Qué se pregunta | Formato |
 |---|---|---|---|
-| 1 | Conexión + situación (el objetivo) | ¿Qué te gustaría conseguir con [servicio]? | Opción única, 3-5 tarjetas + «Otro» |
-| 2 | Situación | ¿En qué punto estás ahora? | Opción única con situaciones reales |
-| 3 | Conciencia del problema | ¿Qué es lo que más te frena hoy? | Opción única o múltiple + texto opcional |
+| 1 | Situación + conciencia del problema | ¿Cuál de estas situaciones se parece más a la tuya? (cada opción describe una situación real con su dolor, con las palabras del cliente) | Opción única, 3-5 tarjetas + «Otra» |
+| 2 | Beneficio (a dónde quiere llegar) | ¿Qué te gustaría conseguir? | Opción única con resultados concretos |
+| 3 | Conciencia de la solución | Una línea que explica cómo lo resuelve el negocio + ¿Qué te ayudaría más ahora? | Opción única con las partes de la solución |
 | 4 | **Cualificación y descalificación** | El dato que decide si encaja: presupuesto, facturación, momento o decisor, **por rangos** | Opción única con rangos |
 | 5 | Compromiso (los datos) | ¿Cómo te contactamos para tu [diagnóstico / llamada]? | Nombre · correo · teléfono · consentimiento |
 
@@ -48,16 +50,17 @@ Si la persona no lo sabe todo, propón opciones razonables para su sector, márc
 - **Nunca más de 5 pasos.** Si hacen falta dos datos de cualificación (por ejemplo, presupuesto y momento), van juntos en el paso 4, en la misma pantalla, o uno sustituye al paso 3. No se añade un sexto paso.
 - **Nunca solo 2 pasos** (datos primero y todo lo demás después): convierte peor que una sola página. Lo mínimo útil son 3-4 pasos.
 - **Una pregunta por pantalla**, con avance al tocar la opción, botón de atrás y **barra de progreso que no empieza en 0**: la pantalla de inicio va sin barra, el paso 1 al 20 %, el 2 al 40 %, el 3 al 60 %, el 4 al 80 % y el 5 dice «último paso». El 100 % solo llega al enviar. Ver que avanza anima a terminar.
-- **Entre el paso 3 y el 4, una línea de solución** en la propia pantalla: «Esto se puede resolver: en la llamada vemos cómo en tu caso». Es la conciencia de la solución de NEPQ: que vea que tiene arreglo antes de cualificarse.
+- **El paso 3 enseña la solución:** una línea que explica cómo se resuelve su caso («Lo resolvemos así: … En la llamada vemos cómo en tu caso») y una pregunta sobre qué parte le ayuda más. Es la conciencia de la solución de NEPQ: que vea que tiene arreglo antes de cualificarse.
+- **Habla como habla el cliente:** las opciones usan sus palabras, no las del negocio. Si hay reseñas, mensajes o el `brief.md`, sácalas de ahí.
 - **Los datos de contacto, solo en el paso 5**, con un texto que dé valor a lo que viene («para preparar tu diagnóstico y llamarte»). Como mucho, **un campo opcional más** si ayuda a la llamada (por ejemplo, la franja horaria en la que prefiere que le llamen).
 - **Nada de salidas que se salten el filtro**: ni «¿prefieres WhatsApp?» ni teléfono a la vista.
 
 ## 3. La descalificación (siempre)
 
-- **Va en el paso 4**, nunca al principio. Preguntar «¿cuál es tu presupuesto?» de entrada activa la defensa y da respuestas falsas.
+- **Va en el paso 4**, nunca al principio. Suele ser de **presupuesto o de urgencia** (cuándo quiere resolverlo). Preguntar «¿cuál es tu presupuesto?» de entrada activa la defensa y da respuestas falsas.
 - **Enmárcala con el resultado**, no como un examen: «Para conseguir [resultado], los proyectos suelen estar en distintos rangos. ¿Cuál encaja contigo?».
 - **Por rangos**, con al menos una opción que descalifique («menos de X», «solo estoy mirando», «más de 6 meses», «no decido yo»).
-- **Como mucho 2 criterios en el paso 4**, en la misma pantalla. Elige los que más deciden. Si hay un tercero (zona, edad, tipo de negocio), mételo en las opciones del paso 2, con su opción que descalifica, o déjalo para la llamada. Nunca se añade un sexto paso.
+- **Como mucho 2 criterios en el paso 4**, en la misma pantalla. Elige los que más deciden. Si hay un tercero (zona, edad, tipo de negocio), mételo en las opciones del paso 1, con su opción que descalifica, o déjalo para la llamada. Nunca se añade un sexto paso.
 - **Una sola pantalla de salida suave**, con el texto adaptado al motivo. Si falla más de un criterio, manda el más decisivo, normalmente el presupuesto.
 - **Salida suave para quien no encaja:** no ve el paso 5 de la llamada. Ve una pantalla amable que le agradece, le explica en una línea por qué ahora no es el momento y le da algo útil (un contenido, una guía, una alternativa o «escríbenos cuando…»). Nunca un rechazo seco.
 - **Medición:** el evento de conversión principal (`Lead`) **solo se dispara con los que cualifican**. A los descalificados, un evento aparte o ninguno. Si no, la plataforma de anuncios aprende a traer más gente que no encaja.
@@ -71,16 +74,16 @@ Escribe el formulario completo en `formulario-nepq.md`, en la carpeta actual, y 
 
 **Pantalla de inicio:** [titular corto] · [«Unas preguntas rápidas, menos de 1 minuto, y preparamos tu llamada»] · Botón: [Empezar]
 
-## Paso 1 · Objetivo  (barra: 20 %)
-**Pregunta:** ¿…?
-**Opciones:** A · B · C · Otro
+## Paso 1 · Situación y problema  (barra: 20 %)
+**Pregunta:** ¿Cuál de estas situaciones se parece más a la tuya?
+**Opciones:** A · B · C · Otra (cada una, una situación real con su dolor)
 **Te dice:** [qué aprendes de esta respuesta]
 
-## Paso 2 · Situación  (40 %)
+## Paso 2 · A dónde quiere llegar  (40 %)
 …
-## Paso 3 · Lo que frena  (60 %)
-…
-**Línea de solución antes del paso 4:** «…»
+## Paso 3 · Cómo se resuelve  (60 %)
+**Línea de solución:** «…»
+**Pregunta:** ¿Qué te ayudaría más ahora?
 
 ## Paso 4 · Encaje (descalificación)  (80 %)
 **Pregunta:** …
@@ -94,7 +97,7 @@ Nombre · Correo · Teléfono · [ ] Acepto la política de privacidad
 ## Lógica
 - Si paso 4 = ✖ → **Salida suave** (no pide datos para la llamada):
   > [texto amable + alternativa]
-- Si no → paso 5 → página de gracias (quién llama, cuándo, de qué) → llamada en los primeros 5 minutos.
+- Si no → paso 5 → página de gracias (quién llama, con su cara, nombre y puesto; cuándo y desde qué número; de qué se habla y los próximos pasos) → llamada en los primeros 5 minutos.
 
 ## Medición
 - `Lead` solo al enviar el paso 5 con un encaje válido.
