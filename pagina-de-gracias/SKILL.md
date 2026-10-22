@@ -22,6 +22,7 @@ Si hay un `brief.md` en la carpeta (de la skill `brief-de-oferta`), léelo prime
 8. **El nombre del negocio y sus datos legales**, para el pie y la política de privacidad.
 9. **Qué días y horas llaman.** Si hay leads fuera de ese horario, la página no puede prometer «en minutos».
 10. **Algo de valor para la espera:** un video corto (por ejemplo, el de la landing o uno que explique cómo trabajan) o un documento útil para su caso. Si no hay ninguno, se deja el hueco marcado y se propone cuál grabar.
+11. **Idioma y trato (pregúntalo siempre, no lo asumas):** en qué idioma y variante van los textos que verá su cliente (español de España, español de Latinoamérica neutro, español rioplatense con voseo u otro idioma), cómo le habla a su cliente (tú, vos o usted) y cómo quiere que le hables a él en esta conversación. Si ya está en el `brief.md`, úsalo y no lo vuelvas a preguntar.
 
 ## 2. Estructura (en este orden)
 
@@ -74,7 +75,7 @@ Además del HTML, escribe en la respuesta los textos de cada bloque, para quien 
 
 - **No inventes** horarios, números, nombres ni cifras. Lo que falte se marca como [FALTA: …] en el HTML.
 - **Promete solo lo que se cumple.** Si no pueden llamar en 5 minutos, que la página no lo diga, y recomienda llamar más rápido.
-- **Tono humano y cercano**, en el idioma y la variante del negocio.
+- **Tono humano y cercano**, en el idioma, la variante y el trato que eligió el negocio (España, Latinoamérica o voseo; tú, vos o usted).
 - El pie de abajo es para quien lee la skill en GitHub. No lo repitas en la conversación.
 
 ---

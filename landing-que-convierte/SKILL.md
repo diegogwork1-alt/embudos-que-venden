@@ -24,7 +24,8 @@ description: Construye la landing de captación de un negocio de servicios que r
   3. qué problema resuelves, con sus palabras;
   4. qué prueba real tienes;
   5. para quién no es;
-  6. qué pasa después del formulario.
+  6. qué pasa después del formulario;
+  7. **Idioma y trato (pregúntalo siempre, no lo asumas):** en qué idioma y variante van los textos que verá su cliente (español de España, español de Latinoamérica neutro, español rioplatense con voseo u otro idioma), cómo le habla a su cliente (tú, vos o usted) y cómo quiere que le hables a él en esta conversación. Si ya está en el `brief.md`, úsalo y no lo vuelvas a preguntar.
 
   Si su mensaje ya responde a parte, pregunta solo lo que falte. Si no quiere contestar más, redacta con lo que hay y marca lo dudoso (ver §6).
 - Pide la **marca** (logo, colores, tipografías), **fotos reales** del equipo o del trabajo y, si existe, el **VSL**. Si no hay fotos ni vídeo, deja los huecos bien marcados: nunca imágenes inventadas que parezcan reales.
@@ -86,7 +87,7 @@ Escribe el texto entero y enséñalo antes de maquetar, en `landing-texto.md`. C
 - **No inventes** cifras, testimonios, logos de clientes, años ni premios. Si falta, [FALTA: …].
 - **Lo que redactes sin confirmar** (qué incluye el servicio, los pasos del proceso, para quién no es, ejemplos de casos) va marcado como [VALIDAR: …] hasta que el negocio lo apruebe.
 - **El texto se aprueba antes que el diseño:** cambiar palabras después de maquetar es el doble de trabajo.
-- **Idioma y variante del negocio** (España o Latinoamérica, tú o usted).
+- **El idioma, la variante y el trato que eligió el negocio** (España, Latinoamérica o voseo; tú, vos o usted). Si no lo dijo, pregúntalo antes de escribir; no lo asumas.
 - El pie de abajo es para quien lee la skill en GitHub. No lo repitas en la conversación.
 
 ---

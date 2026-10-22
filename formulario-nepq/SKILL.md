@@ -33,6 +33,7 @@ Si hay un `brief.md` en la carpeta (de la skill `brief-de-oferta`), léelo prime
 5. **Qué hace que alguien NO encaje**: presupuesto, momento, decisor, zona, tipo de negocio… Es la descalificación, y es obligatoria.
 6. **Qué se le puede ofrecer a quien no encaja** (un contenido, una guía, otro servicio, «vuelve cuando…»).
 7. **Qué pasa después del formulario**: llamada, cita o visita.
+8. **Idioma y trato (pregúntalo siempre, no lo asumas):** en qué idioma y variante van los textos que verá su cliente (español de España, español de Latinoamérica neutro, español rioplatense con voseo u otro idioma), cómo le habla a su cliente (tú, vos o usted) y cómo quiere que le hables a él en esta conversación. Si ya está en el `brief.md`, úsalo y no lo vuelvas a preguntar.
 
 Si la persona no lo sabe todo, propón opciones razonables para su sector, márcalas como **[propuesta, confirmar]** y sigue.
 
@@ -118,7 +119,7 @@ Nombre · Correo · Teléfono · [ ] Acepto la política de privacidad
 
 - **No inventes datos del negocio** (precios, plazos, zonas). Lo que no sepas va como [propuesta, confirmar].
 - **Cada pregunta tiene que servir para algo** en la llamada o en el filtro. Si no sabes qué harías con la respuesta, quítala.
-- **Tono cercano y directo**, en el idioma y la variante del negocio (tú o usted, España o Latinoamérica).
+- **Tono cercano y directo**, en el idioma, la variante y el trato que eligió el negocio (España, Latinoamérica o voseo; tú, vos o usted).
 - El pie de abajo es para quien lee la skill en GitHub. No lo repitas en la conversación.
 
 ## Fuentes del método

@@ -24,6 +24,7 @@ Se revisa siempre en el mismo orden, porque es el orden en el que lo vive el cli
 - **Qué vende el negocio y a quién**, si no se ve en la landing.
 - **Qué pasa después del formulario:** quién llama, cuánto tarda y dónde quedan los datos (CRM, hoja de cálculo, WhatsApp).
 - **Los números, si los tiene:** gasto, leads, contactados y clientes.
+- **Cómo quiere que le hables:** español de España, de Latinoamérica neutro o rioplatense con voseo (u otro idioma), y tú, vos o usted. No lo asumas. Los textos que propongas para su landing van en la variante de su landing.
 
 **Cómo leer la landing sin equivocarte:**
 - **Fíjate en lo que se VE, no solo en el código.** Las páginas esconden elementos (botones de WhatsApp, pop-ups,

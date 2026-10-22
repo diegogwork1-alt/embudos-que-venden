@@ -11,8 +11,14 @@ description: Entrevista al dueño de un negocio, pregunta por pregunta, para sac
 
 - **Si ya existe `brief.md` en la carpeta**, léelo. Si está «en curso», resume en dos líneas lo que hay y sigue desde la siguiente pregunta sin respuesta. Si está completo, pregunta si quiere actualizarlo.
 - **Aprovecha lo que ya ha contado.** Si en su primer mensaje dijo qué vende o a quién, no se lo vuelvas a preguntar: confírmalo («Me dices que es una academia de inglés online para profesionales, ¿correcto?») y pasa a lo que falta.
-- **El idioma y el trato, desde el principio.** Dedúcelos de cómo escribe (España o Latinoamérica, tú o usted) y entrevista así. Si no está claro, pregúntalo en el mensaje de apertura. Todo el brief se escribe en esa variante.
+- **El idioma y el trato, en el mensaje de apertura y siempre preguntados, nunca deducidos** (quien escribe no tiene por qué hablar como su cliente):
+  1. en qué idioma y variante van a estar los textos que lea su cliente: español de España, español de Latinoamérica neutro, español rioplatense con voseo u otro idioma;
+  2. cómo le habla a su cliente: tú, vos o usted;
+  3. cómo quiere que le hables a él durante la entrevista.
+
+  Entrevista como pidió y escribe el brief en la variante de sus textos.
 - **Mensaje de apertura, corto:**
+  - las tres preguntas del idioma y el trato, para contestar ya;
   - son 22 preguntas, unos 30-40 minutos escribiendo;
   - se guarda un borrador al terminar cada bloque, así que puede parar cuando quiera y seguir otro día;
   - si va a hacer también el formulario y la página de gracias, hay 5 preguntas más al final (bloque G), para no tener que repetirlas luego. Pregúntale si las incluyes y numera con el total real desde el principio («Pregunta 4 de 27»).
@@ -77,7 +83,8 @@ Al terminar, escribe `brief.md` en la carpeta actual (sustituye el borrador):
 
 ```
 # Brief · [Negocio]
-Fecha: [hoy] · Estado: [completo / con pendientes] · Idioma: [España, tú]
+Fecha: [hoy] · Estado: [completo / con pendientes]
+Idioma de los textos: [España / Latinoamérica neutro / rioplatense con voseo / otro] · Trato con sus clientes: [tú / vos / usted] · Cómo hablarle al dueño: [lo que pidió]
 
 ## En una frase
 [Qué vende, a quién y el resultado, en una línea.]
