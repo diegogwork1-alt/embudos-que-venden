@@ -27,6 +27,7 @@
   ul{padding-left:20px}li{margin:6px 0;font-size:16px}
   .phone{font-size:20px;font-weight:700;letter-spacing:.3px}
   .you dt{font-size:13px;color:var(--muted);margin-top:10px}.you dd{font-size:16px;font-weight:600}
+  .hueco{border:2px dashed var(--line);border-radius:12px;padding:28px;text-align:center;color:var(--muted);margin-top:12px}
   .proof{margin-top:22px;color:var(--muted);font-size:15px}
   footer{margin-top:36px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
   @media (prefers-reduced-motion:no-preference){.card{animation:in .35s ease both}.card:nth-of-type(2){animation-delay:.05s}.card:nth-of-type(3){animation-delay:.1s}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
@@ -51,7 +52,7 @@
 
   <section class="card">
     <h2>Te llamaremos desde este número</h2>
-    <p class="phone">[FALTA: número o prefijo]</p>
+    <p class="phone">[FALTA: número completo, o «un número que termina en XXXX»]</p>
     <p>Guárdalo para reconocer la llamada.</p>
   </section>
 
@@ -70,6 +71,14 @@
       <li>[FALTA: cosa 1]</li>
       <li>[FALTA: cosa 2]</li>
     </ul>
+  </section>
+
+  <section class="card">
+    <h2>Mientras esperas</h2>
+    <p>[FALTA: una línea sobre qué va a ver y por qué le sirve]</p>
+    <!-- Video incrustado (YouTube, Vimeo, Panda…) o enlace a un documento que se abre en otra pestaña.
+         Si no hay ninguno, deja el hueco marcado: -->
+    <div class="hueco">[FALTA: video o documento de valor]</div>
   </section>
 
   <section class="card you" data-show-if="objetivo,situacion">
