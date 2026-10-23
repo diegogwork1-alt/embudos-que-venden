@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copy mining · [MARCA]</title>
+<!--
+  Plantilla del informe de copy mining. Un solo archivo, sin dependencias.
+  - Cada <section class="pagina"> es una página al imprimir (A4 apaisado). Si una sección no cabe, pártela en dos.
+  - Lo que dicen los clientes va en <q> o en .cita, siempre con su ID (R3). Lo que interpretas va en .lectura.
+  - Las barras: style="--v:N;--max:M" (N = recuento, M = el recuento más alto del gráfico).
+  - Borra los comentarios y los [ ] al rellenarla.
+-->
+<style>
+  :root{--ink:#14213d;--texto:#2b2f3a;--suave:#6b7280;--linea:#e5e7eb;--fondo:#f6f7f9;--acento:#0f766e;
+        --mot:#f59e0b;--mot-s:#fff4e0;--val:#3b82f6;--val-s:#e8f0fe;--ans:#16a34a;--ans-s:#e7f6ec;
+        --font:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--texto);background:#e9ebef;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+  .pagina{background:#fff;max-width:1120px;margin:24px auto;padding:44px 52px 56px;position:relative;border-radius:6px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .cabecera{display:flex;justify-content:space-between;font-size:11px;color:var(--suave);border-bottom:1px solid var(--linea);padding-bottom:8px;margin-bottom:22px}
+  .cabecera b{color:var(--ink);letter-spacing:.5px}
+  .pie{position:absolute;left:52px;right:52px;bottom:18px;display:flex;justify-content:space-between;font-size:10.5px;color:var(--suave)}
+  h1{font-size:44px;color:var(--ink);letter-spacing:-.5px;line-height:1.05}
+  h2{font-size:22px;color:var(--ink);margin:0 0 10px}
+  h3{font-size:15px;color:var(--acento);margin:22px 0 8px}
+  p{margin:6px 0}
+  .marca-sup{color:var(--acento);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  .sub{font-size:18px;color:var(--suave);margin-top:6px;padding-bottom:18px;border-bottom:3px solid var(--acento)}
+  .cifras{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:26px 0}
+  .cifras div{background:var(--fondo);border:1px solid var(--linea);border-radius:8px;padding:14px;text-align:center}
+  .cifras b{display:block;font-size:30px;color:var(--ink);font-weight:600}
+  .cifras span{font-size:12px;color:var(--suave)}
+  .caja{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center;border-radius:8px;padding:14px 18px;margin:12px 0}
+  .caja>b{font-size:12px;letter-spacing:.6px;text-transform:uppercase}
+  .caja.big{background:#e6f6fb}.caja.big>b{color:#0e7490}
+  .caja.promesa{background:#fff3e8}.caja.promesa>b{color:#c2410c}
+  .caja.limite{background:#fff8e1}.caja.limite>b{color:#b45309}
+  .caja.insight{background:#eef4ff}.caja.insight>b{color:#1d4ed8}
+  .para{font-size:13px;color:var(--acento);margin:-4px 0 12px}
+  .para b{font-weight:700}
+  .lectura{border-left:3px solid var(--suave);background:var(--fondo);padding:10px 14px;margin:12px 0;font-size:13.5px}
+  .lectura::before{content:"Interpretación";display:block;font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--suave);margin-bottom:2px}
+  q,.cita{font-style:italic;color:var(--ink)}
+  .id{font-style:normal;font-size:11px;color:var(--suave);margin-left:4px}
+  table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:12.5px}
+  th{background:var(--ink);color:#fff;text-align:left;font-weight:600;padding:7px 10px}
+  td{padding:6px 10px;border-bottom:1px solid var(--linea);vertical-align:top}
+  tr:nth-child(even) td{background:#fafbfc}
+  .n{text-align:center;width:90px}
+  .tres{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+  .col{border:1px solid var(--linea);border-radius:8px;overflow:hidden}
+  .col h4{text-align:center;padding:8px;font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink);background:#fff;border-bottom:1px solid var(--linea)}
+  .col li{list-style:none;display:flex;justify-content:space-between;gap:8px;padding:5px 10px;font-size:12px;border-bottom:1px solid rgba(255,255,255,.7)}
+  .col.mot li{background:var(--mot-s)}.col.val li{background:var(--val-s)}.col.ans li{background:var(--ans-s)}
+  .col li b{font-weight:700}
+  th.mot{background:var(--mot)}th.val{background:var(--val)}th.ans{background:var(--ans)}
+  .barras{margin:14px 0;max-width:860px}
+  .barra{display:grid;grid-template-columns:260px 1fr;gap:12px;align-items:center;margin:7px 0;font-size:12.5px}
+  .barra span:first-child{text-align:right}
+  .barra i{display:block;height:24px;width:calc(var(--v) / var(--max) * 100%);background:var(--color,#1f77b4);border-radius:3px;position:relative}
+  .barra i::after{content:attr(data-v);position:absolute;left:calc(100% + 6px);top:3px;font-style:normal;font-size:12px}
+  .flujo{display:grid;grid-template-columns:1fr 40px 1.4fr 40px 1fr;align-items:center;margin:12px 0;text-align:center}
+  .flujo div{padding:14px;border-radius:6px;font-size:13px}
+  .flujo .antes{background:var(--mot-s)}.flujo .mec{background:var(--val-s)}.flujo .despues{background:var(--ans-s)}
+  .flujo em{font-size:22px;color:var(--acento);font-style:normal}
+  .territorio{display:grid;grid-template-columns:240px 1fr;gap:16px;background:var(--fondo);border:1px solid var(--linea);border-radius:6px;padding:12px 16px;margin:8px 0}
+  .territorio b{color:var(--ink)}
+  ol.lineas{columns:2;column-gap:36px;padding-left:22px;font-size:13px}
+  ol.lineas li{break-inside:avoid;margin:0 0 7px}
+  .grupo{column-span:all;list-style:none;margin:10px 0 6px -22px;font-size:11.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--acento)}
+  .probar{color:#be185d;font-weight:700;font-size:11px;margin-left:4px}
+  .estado{font-size:11px;white-space:nowrap}
+  @page{size:A4 landscape;margin:10mm}
+  @media print{
+    body{background:#fff;font-size:12.5px}
+    .pagina{box-shadow:none;margin:0;max-width:none;border-radius:0;padding:4mm 6mm 14mm;min-height:188mm;break-after:page}
+    .pagina:last-child{break-after:auto}
+    th,.col,.caja,.lectura,.barra i,.flujo div,.territorio,tr:nth-child(even) td,.cifras div{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .pie{left:6mm;right:6mm;bottom:2mm}
+  }
+</style>
+</head>
+<body>
+
+<!-- 1 · PORTADA -->
+<section class="pagina">
+  <p class="marca-sup">Copy mining</p>
+  <h1>[MARCA]</h1>
+  <p class="sub">Análisis de reseñas para escribir anuncios con las palabras de los clientes</p>
+  <div class="cifras">
+    <div><b>[N]</b><span>reseñas detectadas</span></div>
+    <div><b>[N]</b><span>con texto</span></div>
+    <div><b>[X,X/5]</b><span>valoración media</span></div>
+    <div><b>≈[N]</b><span>palabras analizadas</span></div>
+  </div>
+  <div class="caja big"><b>Big idea</b><div><strong>[La big idea en una frase.]</strong><br>[Por qué: qué ansiedad, qué diferencia y qué prueba une.]</div></div>
+  <div class="caja promesa"><b>Promesa que emerge</b><div>[La promesa que se lee en las reseñas, en una o dos frases.]</div></div>
+  <div class="pie"><span>Fuente: [de dónde salen las reseñas y fecha de la extracción]</span><span>Página 1</span></div>
+</section>
+
+<!-- 2 · DIAGNÓSTICO DEL CORPUS -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>1. Diagnóstico del corpus</h2>
+  <p class="para"><b>Para qué sirve:</b> Saber cuánto pesa cada número antes de usarlo.</p>
+  <p>[Cómo se limpió: qué se quitó (interfaz, duplicados, respuestas del dueño) y cómo se anonimizó.]</p>
+  <table>
+    <tr><th>Métrica</th><th>Resultado</th></tr>
+    <tr><td>Reseñas detectadas</td><td>[N]</td></tr>
+    <tr><td>Con texto / sin texto</td><td>[N] / [N]</td></tr>
+    <tr><td>Truncadas («Más»)</td><td>[N]</td></tr>
+    <tr><td>Reparto de estrellas</td><td>[5★ N · 4★ N · …]</td></tr>
+    <tr><td>Fechas</td><td>[de … a …]</td></tr>
+    <tr><td>Idioma</td><td>[…]</td></tr>
+    <tr><td>Fuentes</td><td>[Google Maps N · Trustpilot N · competencia N…]</td></tr>
+  </table>
+  <div class="caja limite"><b>Limitaciones</b><div>[Pocas reseñas, truncadas, casi todas de 5★… y qué significa para leer los recuentos.]</div></div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 2</span></div>
+</section>
+
+<!-- 3 · LAS TRES PREGUNTAS -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>2. Las tres preguntas, reseña por reseña</h2>
+  <p class="para"><b>Para qué sirve:</b> La base de todo: por qué compraron, qué temían y qué les encantó, con sus palabras.</p>
+  <p>Cada celda es una cita literal. Si la reseña no lo dice, queda «no lo dice».</p>
+  <table>
+    <tr><th>ID</th><th>¿Por qué compró?</th><th>¿Qué temía antes?</th><th>¿Qué le encantó después?</th></tr>
+    <tr><td>R1</td><td><q>[cita]</q></td><td>no lo dice</td><td><q>[cita]</q></td></tr>
+  </table>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 3</span></div>
+</section>
+
+<!-- 4 · RESUMEN -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>3. Resumen: motivaciones, valores y ansiedades</h2>
+  <p class="para"><b>Para qué sirve:</b> Las motivaciones dan el gancho y la promesa; los valores, lo que hay que demostrar; las ansiedades, las objeciones.</p>
+  <p>El número es de reseñas con evidencia del concepto. Una reseña puede contar en varias filas.</p>
+  <div class="tres">
+    <div class="col mot"><h4>Motivaciones</h4><ul><li>[Categoría]<b>[N]</b></li></ul></div>
+    <div class="col val"><h4>Valores</h4><ul><li>[Categoría]<b>[N]</b></li></ul></div>
+    <div class="col ans"><h4>Ansiedades</h4><ul><li>[Categoría]<b>[N]</b></li></ul></div>
+  </div>
+  <div class="lectura">[Lectura principal: qué señal es la más fuerte y qué papel juega cada bloque.]</div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 4</span></div>
+</section>
+
+<!-- 5 · PATRONES DE LENGUAJE -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>4. Patrones en el lenguaje de los clientes</h2>
+  <p class="para"><b>Para qué sirve:</b> Qué temas repetir en toda la comunicación.</p>
+  <table>
+    <tr><th>#</th><th>Patrón</th><th class="n">Reseñas</th><th>Lo que dicen (literal)</th><th>Fuerza para copy</th></tr>
+    <tr><td>1</td><td>[Patrón]</td><td class="n">[N]</td><td><q>[cita]</q><span class="id">R3</span></td><td>★★★★★ [por qué]</td></tr>
+  </table>
+  <h3>Patrón narrativo de más valor</h3>
+  <p><q>[La estructura, con una cita real.]</q></p>
+  <div class="lectura">[Por qué esa estructura sirve para un anuncio.]</div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 5</span></div>
+</section>
+
+<!-- 6 · FRASES Y ESTRUCTURAS -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>5. Frases con más potencial</h2>
+  <p class="para"><b>Para qué sirve:</b> El texto de tus anuncios y de tu landing, con las palabras de tus clientes. Las estructuras, el esqueleto de tus anuncios.</p>
+  <p>Copiadas tal cual del corpus.</p>
+  <table>
+    <tr><th>Frase literal</th><th>ID</th><th>Qué comunica</th></tr>
+    <tr><td><q>[frase]</q></td><td>[R3, R8]</td><td>[Diferenciación / Objeción / Transformación…]</td></tr>
+  </table>
+  <h3>Estructuras narrativas que se repiten</h3>
+  <div class="territorio"><b>«Pensaba X → descubrí Y»</b><div><q>[ejemplo literal]</q><span class="id">R8</span></div></div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 6</span></div>
+</section>
+
+<!-- 7 · MATRIZ VOZ DEL CLIENTE -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>6. Matriz voz del cliente</h2>
+  <p class="para"><b>Para qué sirve:</b> El vocabulario de cada tema, y el hallazgo: la diferencia que tu anuncio tiene que contar.</p>
+  <table>
+    <tr><th>Territorio</th><th>Palabras y expresiones detectadas</th></tr>
+    <tr><td>[Organización]</td><td>[palabras literales, separadas por comas]</td></tr>
+  </table>
+  <div class="caja insight"><b>Insight central</b><div>[Interpretación: la promesa que emerge y por qué.]</div></div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 7</span></div>
+</section>
+
+<!-- 8 · DETALLE CON CITAS -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>7. Motivaciones, valores y ansiedades en detalle</h2>
+  <p class="para"><b>Para qué sirve:</b> Encontrar la cita exacta para cada mensaje.</p>
+  <table>
+    <tr><th class="mot">Motivación</th><th class="mot n">Reseñas</th><th class="mot">Cita</th></tr>
+    <tr><td>[Categoría]</td><td class="n">[N]</td><td><q>[cita]</q><span class="id">R1, R5</span></td></tr>
+  </table>
+  <table>
+    <tr><th class="val">Valor</th><th class="val n">Reseñas</th><th class="val">Cita</th></tr>
+    <tr><td>[Categoría]</td><td class="n">[N]</td><td><q>[cita]</q><span class="id">R2</span></td></tr>
+  </table>
+  <table>
+    <tr><th class="ans">Ansiedad</th><th class="ans n">Reseñas</th><th class="ans">Cita o señal</th></tr>
+    <tr><td>[Categoría] <span class="id">(latente)</span></td><td class="n">[N]</td><td><q>[cita]</q><span class="id">R7</span></td></tr>
+  </table>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 8</span></div>
+</section>
+
+<!-- 9 · ANSIEDADES Y TRANSFORMACIÓN -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>8. Las ansiedades: explícitas y latentes</h2>
+  <p class="para"><b>Para qué sirve:</b> Las objeciones que el anuncio y la landing contestan antes de que el cliente pregunte.</p>
+  <p><b>Explícitas</b> (las dice el cliente): <q>[cita]</q><span class="id">R3</span></p>
+  <div class="lectura"><b>Latentes</b> (se deducen de lo que el cliente remarca): [cuáles y de qué se deducen].</div>
+  <h3>Transformación principal</h3>
+  <div class="flujo">
+    <div class="antes"><b>ANTES</b><br><q>[cita]</q></div><em>→</em>
+    <div class="mec"><b>LO QUE LO CAMBIA</b><br>[el mecanismo, en palabras de los clientes]</div><em>→</em>
+    <div class="despues"><b>DESPUÉS</b><br><q>[cita]</q></div>
+  </div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 9</span></div>
+</section>
+
+<!-- 10 · GRÁFICOS (uno por bloque; repite la sección para valores y ansiedades) -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>9. Gráfico: motivaciones</h2>
+  <p class="para"><b>Para qué sirve:</b> Ver de un vistazo qué pesa más.</p>
+  <p>[Una línea: cuál domina.]</p>
+  <div class="barras" style="--color:var(--mot)">
+    <div class="barra"><span>[Categoría]</span><i style="--v:8;--max:8" data-v="8"></i></div>
+    <div class="barra"><span>[Categoría]</span><i style="--v:5;--max:8" data-v="5"></i></div>
+  </div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 10</span></div>
+</section>
+
+<!-- 11 · TERRITORIOS Y BIG IDEA -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>10. Territorios publicitarios</h2>
+  <p class="para"><b>Para qué sirve:</b> Cada territorio es una línea de anuncios para probar; la big idea, el ángulo de toda la campaña.</p>
+  <div class="territorio"><b>1. «[territorio]»</b><div>[De qué cita nace y por qué tiene fuerza.]</div></div>
+  <div class="caja big"><b>Big idea</b><div><strong>[La big idea.]</strong><br>[Lo que la sostiene.]</div></div>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 11</span></div>
+</section>
+
+<!-- 12 · 50 LÍNEAS DE ANUNCIO (parte en dos páginas si hace falta) -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>11. 50 líneas de anuncio</h2>
+  <p class="para"><b>Para qué sirve:</b> Ganchos y titulares para probar en los anuncios.</p>
+  <p>Agrupadas por territorio. <span class="probar">PROBAR PRIMERO</span> marca las cinco con más potencial.</p>
+  <ol class="lineas">
+    <li class="grupo">[Territorio 1]</li>
+    <li>[Línea]<span class="probar">PROBAR PRIMERO</span></li>
+    <li>[Línea]</li>
+  </ol>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 12</span></div>
+</section>
+
+<!-- 13 · APÉNDICE -->
+<section class="pagina">
+  <div class="cabecera"><b>COPY MINING · [MARCA]</b><span>Análisis de reseñas para estrategia publicitaria</span></div>
+  <h2>12. Apéndice: corpus usado</h2>
+  <p class="para"><b>Para qué sirve:</b> Comprobar de dónde sale cada cita.</p>
+  <p>Anonimizado. Los textos van hasta donde eran visibles en el material facilitado.</p>
+  <table>
+    <tr><th>ID</th><th>Texto</th><th>★</th><th>Estado</th></tr>
+    <tr><td>R1</td><td>[texto literal]</td><td>[5]</td><td class="estado">[Completa / Truncada]</td></tr>
+  </table>
+  <div class="pie"><span>Fuente: [ … ]</span><span>Página 13</span></div>
+</section>
+
+</body>
+</html>

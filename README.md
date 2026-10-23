@@ -1,6 +1,6 @@
 # Skills de Claude para embudos que venden
 
-Cinco skills para Claude Code con el método que uso en **Flowboost Marketing** para que los anuncios traigan clientes y no solo leads. Funcionan en tu ordenador, dentro de Claude Code: sin cuentas ni herramientas externas.
+Seis skills para Claude Code con el método que uso en **Flowboost Marketing** para que los anuncios traigan clientes y no solo leads. Funcionan en tu ordenador, dentro de Claude Code: sin cuentas ni herramientas externas.
 
 | Skill | Qué hace | Qué te deja en la carpeta |
 |---|---|---|
@@ -9,8 +9,9 @@ Cinco skills para Claude Code con el método que uso en **Flowboost Marketing** 
 | [`landing-que-convierte`](landing-que-convierte/) | Del brief al texto y del texto a una landing en un solo HTML, rápida, móvil primero y con una sola acción | `landing-texto.md` · `index.html` · `pendientes.md` |
 | [`formulario-nepq`](formulario-nepq/) | El formulario de varios pasos que cualifica: primero la situación y el problema, después a dónde quiere llegar y cómo se resuelve, y los datos al final. Te lo da en texto, para cualquier herramienta | `formulario-nepq.md` |
 | [`pagina-de-gracias`](pagina-de-gracias/) | La página de gracias que hace que el lead espere tu llamada: quién llama, cuándo, desde qué número y de qué se habla | `gracias.html` |
+| [`copy-mining`](copy-mining/) | Pegas tus reseñas (o las de tu competencia) y saca lo que tus clientes dicen con sus palabras: por qué compraron, qué temían antes y qué les encantó después. Con eso, la big idea y 50 líneas de anuncio, sin inventar ni una cita. Si no tienes las reseñas a mano, te explica cómo bajarlas | `copy-mining-[marca].html` (imprimible a PDF) · `copy-mining-[marca].md` |
 
-**El orden recomendado:** `brief-de-oferta` → `landing-que-convierte` → `formulario-nepq` → `pagina-de-gracias`. Y cuando ya tengas anuncios funcionando, `revisor-de-embudo`.
+**El orden recomendado:** `brief-de-oferta` → `copy-mining` (si ya tienes reseñas) → `landing-que-convierte` → `formulario-nepq` → `pagina-de-gracias`. Y cuando ya tengas anuncios funcionando, `revisor-de-embudo`.
 
 ## Instalación
 
@@ -19,7 +20,7 @@ Cinco skills para Claude Code con el método que uso en **Flowboost Marketing** 
 ```bash
 git clone https://github.com/diegogwork1-alt/embudos-que-venden.git
 mkdir -p ~/.claude/skills
-cd embudos-que-venden && cp -r revisor-de-embudo brief-de-oferta landing-que-convierte formulario-nepq pagina-de-gracias ~/.claude/skills/
+cd embudos-que-venden && cp -r revisor-de-embudo brief-de-oferta landing-que-convierte formulario-nepq pagina-de-gracias copy-mining ~/.claude/skills/
 ```
 
 Si solo las quieres en un proyecto, cópialas en la carpeta `.claude/skills/` de ese proyecto.
@@ -30,6 +31,7 @@ Si solo las quieres en un proyecto, cópialas en la carpeta `.claude/skills/` de
 - «Quiero una landing para mi clínica»
 - «Rehazme el formulario, solo pido nombre y teléfono»
 - «Hazme la página de gracias»
+- «Te paso mis reseñas de Google, hazme el copy mining»
 
 ## El método, en una frase
 
